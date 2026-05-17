@@ -18,6 +18,7 @@ int main(void) {
         int rowSum = 0;
         int rowMean = 0;
         scanf("%99s", names[i]);
+        names[i][0] = toupper(names[i][0]);
         for (int j = 0; j < NUMBERS; j++) {
             scanf("%d", &number);
             rowSum += number;
