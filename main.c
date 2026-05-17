@@ -34,14 +34,17 @@ int main(void) {
     for (int y = 0; y < ROWS-1; y++) {
         if (personMean[y] > personMean[y+1]) {
             highScore = y;
+        } else {
+            highScore = y + 1;
         }
+        
+
     }
     printf("%s\n", names[highScore]);
     for (int k = 0; k < ROWS; k++)
     {
         
         if (personMean[k] < totalMean) {
-            names[k][0] = toupper(names[k][0]);
             printf("%s\n", names[k]);
         }
         
