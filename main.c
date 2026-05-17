@@ -31,12 +31,11 @@ int main(void) {
 
     totalMean = totalSum/(ROWS * NUMBERS);
 
-    for (int y = 0; y < ROWS-1; y++) {
-        if (personMean[y] > personMean[y+1]) {
+    for (int y = 1; y < ROWS; y++) {
+        if (personMean[highScore] < personMean[y]) {
             highScore = y;
-        } else {
-            highScore = y + 1;
         }
+
         
 
     }
